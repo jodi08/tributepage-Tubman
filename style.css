@@ -14,6 +14,7 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
+/* section 1 and all parts */
 .section1 {
   height: 100vh;
   width: 100vw;
@@ -63,7 +64,7 @@ h1#title {
   margin-top: 30px;
   border: 2px solid black;
   height: 350px;
-  width: 30%;
+  max-width: 30%;
   display: inline-block;
 }
 
@@ -74,7 +75,13 @@ h1#title {
   font-size: 2rem;
   padding-top: 2rem;
 }
-
+.back-to-top {
+  font-size: 1rem;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+/* section 2 and all parts */
 .section2 {
   height: 100vh;
   width: 100vw;
@@ -85,32 +92,6 @@ h1#title {
   padding: 3rem 0;
   text-align: center;
 }
-.col li {
-  padding: 1rem 10rem;
-}
-.section3 {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  background: #e6e6e6;
-}
-.section4 {
-  height: 100vh;
-  width: 100vw;
-  font-size: 2em;
-  text-align: left;
-  position: relative;
-}
-.bg {
-  height: 100vh;
-  width: 100vw;
-  background-image: url("./images/Harriet-Tubman-House.jpg");
-  opacity: 0.3;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
 #facts {
   margin-top: 25px;
   margin-left: 40px;
@@ -121,6 +102,7 @@ h1#title {
 #tribute-info {
   padding: 1rem 3rem;
 }
+
 .ur-link {
   color: #d35400;
 }
@@ -130,7 +112,13 @@ h1#title {
 .ur-link::after {
   color: #d35400;
 }
-
+.section3 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background: #e6e6e6;
+}
+/* section 3 and all parts */
 #currency {
   padding: 3rem 3rem;
   text-align: left;
@@ -156,28 +144,36 @@ h1#title {
   border: 15px solid #d35400;
 }
 
-#tribute-link {
-  margin-top: 25px;
-  margin-left: 50px;
-  font-size: 25px;
-  font-weight: 500;
+/* section 4 and all parts */
+
+.section4 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
 }
-.back-to-top {
-  font-size: 1rem;
+.section4::before {
+  content: "";
   position: absolute;
-  bottom: 15px;
-  left: 15px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("./images/Harriet-Tubman-House.jpg");
+  background-size: cover;
+  background-position: top-center;
+  opacity: 0.3;
+}
+#bg {
+  font-size: 2em;
+  text-align: left;
+  padding: 3em 3em;
+  position: absolute;
+  top: 100px;
+  left: 200px;
 }
 .resources {
   font-size: 20px;
   margin-left: 30px;
-}
-div.section5 {
-  background-color: #e0e0eb;
-}
-.card {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* these are the links in the resources section. Styled to have the orange color at all phases 
@@ -191,9 +187,16 @@ the button. */
 .btn-color:hover {
   color: #d35400;
 }
+#tribute-link {
+  margin-top: 25px;
+  margin-left: 50px;
+  font-size: 25px;
+  font-weight: 500;
+}
 .quote1 {
   font-family: "Dancing Script", sans-serif;
   font-size: 2.5rem;
   text-align: center;
   margin: 150px 90px;
+  font-weight: 900;
 }
