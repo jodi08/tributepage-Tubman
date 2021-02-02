@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+:root {
+  --clr-accent-1: #d35400;
+  --clr-accent-2: #e6e6e6;
+  --clr-main-1: #fff;
+}
 *,
 *::before,
 *::after {
@@ -14,25 +20,26 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
+section {
+  width: 100vw;
+  position: relative;
+}
 /* section 1 and all parts */
 .section1 {
-  height: 100vh;
-  width: 100vw;
   padding: 1em;
-  background: #e6e6e6;
+  background: var(--clr-accent-2);
 }
-ul.nav {
+nav.nav {
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 30px;
 }
-.nav {
+nav {
   display: flex;
   color: black;
   font-family: "Poppins", sans-serif;
-  height: 60px;
   width: 100%;
   background: transparent;
 }
@@ -40,11 +47,10 @@ ul.nav {
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  height: 50px;
   width: 195px;
   text-align: center;
   transform: scale(1.2);
-  box-shadow: 0 0 15px #d35400;
+  box-shadow: 0 0 15px var(--clr-accent-1);
 }
 h1#title {
   text-align: center;
@@ -54,21 +60,21 @@ h1#title {
   margin-top: 30px;
   padding-top: 2rem;
 }
-#img-div {
+#img-div-ht {
   margin: 4rem auto;
   padding-top: 2rem;
   background: rgba(211, 84, 0, 0.5);
-  border: 5px solid #d35400;
+  border: 5px solid var(--clr-accent-1);
 }
-#image {
+#image-ht {
   margin-top: 30px;
   border: 2px solid black;
-  height: 350px;
   max-width: 30%;
+  min-height: 350px;
   display: inline-block;
 }
 
-#img-caption {
+#img-caption-ht {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
@@ -82,41 +88,33 @@ h1#title {
   left: 15px;
 }
 /* section 2 and all parts */
-.section2 {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-}
+
 .facts-title {
   font-size: 3rem;
-  padding: 3rem 0;
+  padding: 2.5rem 0;
   text-align: center;
 }
 #facts {
-  margin-top: 25px;
-  margin-left: 40px;
+  margin: 20px auto;
   text-align: left;
   font-family: "Poppins", sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 #tribute-info {
   padding: 1rem 3rem;
 }
 
 .ur-link {
-  color: #d35400;
+  color: var(--clr-accent-1);
 }
 .ur-link:hover {
-  color: #d35400;
+  color: var(--clr-accent-1);
 }
 .ur-link::after {
-  color: #d35400;
+  color: var(--clr-accent-1);
 }
 .section3 {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  background: #e6e6e6;
+  background: var(--clr-accent-2);
 }
 /* section 3 and all parts */
 #currency {
@@ -141,14 +139,17 @@ h1#title {
   font-size: 20px;
   text-align: center;
   padding: 60px;
-  border: 15px solid #d35400;
+  border: 15px solid var(--clr-accent-1);
+}
+figcaption {
+  text-align: center;
 }
 
 /* section 4 and all parts */
-
+/* .section4 {
+  position: relative;
+} */
 .section4 {
-  height: 100vh;
-  width: 100vw;
   position: relative;
 }
 .section4::before {
@@ -179,13 +180,13 @@ h1#title {
 /* these are the links in the resources section. Styled to have the orange color at all phases 
 the button. */
 .btn-color {
-  color: #d35400;
+  color: var(--clr-accent-1);
 }
 .btn-color::after {
-  color: #d35400;
+  color: var(--clr-accent-1);
 }
 .btn-color:hover {
-  color: #d35400;
+  color: var(--clr-accent-1);
 }
 #tribute-link {
   margin-top: 25px;
